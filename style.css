@@ -28,25 +28,25 @@ body{
     margin-bottom: 10px;
 }
 
-.line {
+.op-line {
     width: 1080px;
     height: 1px;
     background-color: #9b909b;
     margin: 10px auto 20px;
 }
 
-.cards.first-row .card {
+.op-cards.op-first-row .op-card {
     width: 348px; /* Breitere Karten */
     height: auto; /* Höhere Karten */
     padding: 0px; /* Mehr Innenabstand */
 }
 
-.cards.first-row .card img {
+.op-cards.op-first-row .op-card img {
     height: 160px; /* Größere Bilder */
     object-fit: cover; /* Bild füllt den Platz aus */
 }
 
-.cards {
+.op-cards {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -54,7 +54,7 @@ body{
     margin-bottom: 30px; /* Abstand zwischen den Zeilen */
 }
 
-.card {
+.op-card {
     position: relative; /* Ermöglicht die absolute Positionierung der Badge */
     background-color: #fff;
     border: 1px solid #ddd;
@@ -65,13 +65,13 @@ body{
     text-align: center;
 }
 
-.card:hover{
+.op-card:hover{
     transform: scale(1.50);
     transition: transform 0.3s ease-in-out;
     z-index: 1;
 }
 
-.card img {
+.op-card img {
     width: 100%;
     height: auto;
     border-top-left-radius: 4px;
@@ -79,7 +79,7 @@ body{
     
 }
 
-.card .badge {
+.op-card .op-badge {
     position: absolute; /* Absolut positioniert relativ zur Karte */
     top: -14px; /* Abstand vom oberen Rand */
     left: 10px; /* Abstand vom linken Rand */
@@ -91,14 +91,14 @@ body{
     border: 1px solid #fff; /* Weiße Umrandung */
 }
 
-.card p {
+.op-card p {
     font-size: 16px;
     margin: 10px 0;
     text-align: left; /* Text linksbündig ausrichten */
     padding-left: 10px; /* Optional: Abstand vom linken Rand */
 }
 
-.price {
+.op-price {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -108,7 +108,7 @@ body{
     padding-right: 10px; /* Optional: Abstand vom rechten Rand */
 }
 
-.price .discount {
+.op-price .op-discount {
     background-color: #800080;
     color: #fff;
     padding: 5px 10px;
@@ -116,33 +116,33 @@ body{
     font-size: 14px;
 }
 
-.price .price-details {
+.op-price .op-price-details {
     display: flex;
     flex-direction: column; /* Stapelt old-price und new-price vertikal */
     align-items: flex-start; /* Links ausrichten */
 }
 
-.price .old-price {
+.op-price .op-old-price {
     text-decoration: line-through;
     color: #333;
     font-size: 12px;
     font-weight: bold;
 }
 
-.price .new-price {
+.op-price .op-new-price {
     font-size: 16px;
     font-weight: bold;
     color: #333;
 }
 
-.pagination {
+.op-pagination {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 20px;
 }
 
-.pagination span {
+.op-pagination span {
     width: 30px;
     height: 1px;
     background-color: #800080;
