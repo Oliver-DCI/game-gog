@@ -18,6 +18,141 @@ body{
 
 
 /* Bereich für Oliver */
+.section-olli {
+    padding: 20px;
+    text-align: center;
+}
+
+.section-olli h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.line {
+    width: 1080px;
+    height: 1px;
+    background-color: #9b909b;
+    margin: 10px auto 20px;
+}
+
+.cards.first-row .card {
+    width: 348px; /* Breitere Karten */
+    height: auto; /* Höhere Karten */
+    padding: 0px; /* Mehr Innenabstand */
+}
+
+.cards.first-row .card img {
+    height: 160px; /* Größere Bilder */
+    object-fit: cover; /* Bild füllt den Platz aus */
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px; /* Abstand zwischen den Zeilen */
+}
+
+.card {
+    position: relative; /* Ermöglicht die absolute Positionierung der Badge */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 256px;
+    padding: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card:hover{
+    transform: scale(1.50);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    
+}
+
+.card .badge {
+    position: absolute; /* Absolut positioniert relativ zur Karte */
+    top: -14px; /* Abstand vom oberen Rand */
+    left: 10px; /* Abstand vom linken Rand */
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #fff; /* Weiße Umrandung */
+}
+
+.card p {
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: left; /* Text linksbündig ausrichten */
+    padding-left: 10px; /* Optional: Abstand vom linken Rand */
+}
+
+.price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-right: 10px; /* Optional: Abstand vom rechten Rand */
+}
+
+.price .discount {
+    background-color: #800080;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.price .price-details {
+    display: flex;
+    flex-direction: column; /* Stapelt old-price und new-price vertikal */
+    align-items: flex-start; /* Links ausrichten */
+}
+
+.price .old-price {
+    text-decoration: line-through;
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.price .new-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pagination span {
+    width: 30px;
+    height: 1px;
+    background-color: #800080;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* .pagination span:nth-child(2) {
+    background-color: #800080;
+} */
 
 
 
