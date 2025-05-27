@@ -1,91 +1,233 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color:#D9D9D9;
-
+body {
+  background-color: #d9d9d9;
 }
 
 /* Bereich für Sandra */
 
-
-
-
-
-
-
-
 /* Bereich für Oliver */
 
+/* Bereich für Sandra */
 
-
-
-
-
-
-
-
-/* Bereich für Isabelle */
-.body.bg-light{
-    height: 100vw;
-    
+.body.bg-light {
+  height: 100vw;
 }
 .headline-line {
-    height: 2px;
-    background-color: rgb(218, 203, 203);
-    width: 100%;
-    padding: 1,5px;
-    margin: 35px;
-    margin-left: auto;
+  height: 2px;
+  background-color: rgb(218, 203, 203);
+  width: 100%;
+  padding: 1, 5px;
+  margin: 35px;
+  margin-left: auto;
 }
-.text-danger{
-    background-color: rgb(110, 29, 114);    
+.text-danger {
+  background-color: rgb(110, 29, 114);
 }
 
-.col{
-    padding-bottom: 100px;
-    padding: 17px;
-    
-
+.col {
+  padding-bottom: 100px;
+  padding: 17px;
 }
-.card:hover{
-    transform: scale(2.05);
-    transition: transform 0.5s ease-in-out; 
-    z-index: 1;
+.card:hover {
+  transition: transform 0.5s ease-in-out;
+  transform: scale(2.2);
+  z-index: 1;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 .strich-container {
-    display: flex; /* Legt die Striche nebeneinander */
-    gap: 5mm; /* Abstand von 1 Millimeter zwischen den Strichen */
-    align-items: center; /* Richtet die Striche am unteren Rand aus */
-    flex-direction: row;
-    justify-content: center;
-    height: 20px; /* Optional: Genug Platz, damit die Striche sichtbar sind */
-  }
+  display: flex; /* Legt die Striche nebeneinander */
+  gap: 5mm; /* Abstand von 1 Millimeter zwischen den Strichen */
+  align-items: center; /* Richtet die Striche am unteren Rand aus */
+  flex-direction: row;
+  justify-content: center;
+  height: 20px; /* Optional: Genug Platz, damit die Striche sichtbar sind */
+}
+
+.strich {
+  width: 1cm; /* Breite jedes Striches: 1 Zentimeter */
+  height: 1mm; /* Dicke der Linie */
+  border-bottom: 4px solid; /* Gestrichelter unterer Rand */
+}
+
+.strich.gray {
+  border-color: gray;
+}
+
+.strich.purple {
+  border-color: purple;
+}
+
+.strich-container .strich:nth-child(1) {
+  border-width: 1mm;
+}
+
+.section-sandra .headline-line {
+  height: 4px;
+  background-color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.section-sandra .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 350px;
+  height: 350px;
+}
+
+.section-sandra .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.section-sandra .card-text {
+  font-size: 1.2rem;
+}
+
+.section-sandra .text-danger {
+  color: #dc3545;
+  font-weight: bold;
+}
+div.container.my-5 {
+  padding-bottom: 200px;
+}
+p.card-text {
+  color: white;
+  font-size: 1.8rem;
+}
+.buttonsn {
+  background-color: #d5ff4a;
+  color: (black);
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 25px 65px;
+  border-radius: 10px;
+}
+
+
+.news-card {
+  position: relative;
+
+  color: white;
+}
+.news-card img {
+  height: 200px;
+
+  object-fit: cover;
+}
+.news-card .card-img-overlay {
+  background: rgba(0, 0, 0, 0.5);
+
+  padding: 10px;
+
+  display: flex;
+
+  align-items: flex-end;
+}
+
+.explore-section {
+  background: #1a1a1a;
+
+  color: white;
+padding: 40 px 200px;
+text-align: start;
   
-  .strich {
-    width: 1cm; /* Breite jedes Striches: 1 Zentimeter */
-    height: 1mm; /* Dicke der Linie */
-    border-bottom: 4px solid /* Gestrichelter unterer Rand */
-  }
-  
-  .strich.gray {
-    border-color: gray; }
-  
-  .strich.purple{
-    border-color: purple; }
+}
+.explore-section h2{
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+.explore-section p{
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+.explore-section .card-img{
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
 
-    .strich-container .strich:nth-child(1){
-        border-width: 1mm;
-        
-    }
-    
+.explore-overlay {
+  background: rgba(0, 0, 0, 0.6);
 
+  padding: 40px;
 
+  border-radius: 10px;
 
+  text-align: center;
+}
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
 
+  border-radius: 50%;
+}
+.navbarsandra {
+  background-color: rgb(56, 55, 55);
+  padding: 10px;
+}
 
+.navbarsandra ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 20px 0;
+  padding-right: 550px;
+}
+.navbarsandra li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  font-size: 1.3rem;
+}
+.fa-brands {
+  color: white;
+  background-color: rgb(56, 55, 55);
+}
+.buttonsandra {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.navbarsandra2 {
+  background-color: rgb(43, 40, 40);
+  padding: 10px;
+}
 
+.navbarsandra2 ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-right: 230px;
+}
+
+.navbarsandra2 li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  font-weight: 0.9rem;
+}
+
+.buttonpurple {
+  background-color: rgb(110, 29, 114);
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 25px 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+.buttonpurple:hover {
+  box-shadow: 0 0 10px 3px hsl(298, 100%, 82%);
+}
