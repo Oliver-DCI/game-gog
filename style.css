@@ -106,8 +106,8 @@ p.card-text {
   font-size: 1.5rem;
   padding: 25px 65px;
   border-radius: 10px;
+  margin-right: 1150px;
 }
-
 
 .news-card {
   position: relative;
@@ -133,19 +133,20 @@ p.card-text {
   background: #1a1a1a;
 
   color: white;
-padding: 40 px 200px;
-text-align: start;
-  
+  padding: 40 px 200px;
+  text-align: start;
 }
-.explore-section h2{
+.explore-section h2 {
   font-size: 3rem;
   margin-bottom: 40px;
+  padding-right: 940px;
+  padding-top: 170px;
 }
-.explore-section p{
+.explore-section p {
   font-size: 1.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
-.explore-section .card-img{
+.explore-section .card-img {
   max-width: 100%;
   height: auto;
   margin-bottom: 20px;
@@ -169,7 +170,7 @@ text-align: start;
   border-radius: 50%;
 }
 .navbarsandra {
-  background-color: rgb(56, 55, 55);
+  background-color: rgb(43, 40, 40);
   padding: 10px;
 }
 
@@ -196,9 +197,10 @@ text-align: start;
   flex-direction: row;
   gap: 20px;
 }
+
 .navbarsandra2 {
-  background-color: rgb(43, 40, 40);
   padding: 10px;
+  background-color: rgb(56, 55, 55);
 }
 
 .navbarsandra2 ul {
@@ -208,14 +210,15 @@ text-align: start;
   margin: 20px 0;
   flex-wrap: wrap;
   justify-content: center;
-  padding-right: 230px;
+  padding-right: 160px;
 }
 
 .navbarsandra2 li a {
-  color: white;
+  color: rgb(168, 163, 163);
   text-decoration: none;
   padding: 8px;
   font-weight: 0.9rem;
+  font-weight: bold;
 }
 
 .buttonpurple {
@@ -230,4 +233,16 @@ text-align: start;
 }
 .buttonpurple:hover {
   box-shadow: 0 0 10px 3px hsl(298, 100%, 82%);
+}
+.parent-container {
+  background-color: rgb(43, 40, 40);
+}
+.navbarsandra3 ul li a {
+  color: rgb(168, 163, 163);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.navbarsandra3 ul {
+  list-style: none;
 }
