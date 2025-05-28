@@ -348,10 +348,14 @@ body{
 
 .op-bestseller-section {
     padding: 20px;
-    background-color: #f5f5f5;
-    border-radius: 8px;
+    border-radius: 4px;
     margin-bottom: 20px;
-    margin-top: 20px;;
+    margin-top: 20px;
+    margin: 20px auto;
+    max-width: 1200px; /* Maximale Breite der Sektion */
+    width: 1120px;
+    background-color: #D9D9D9;
+
 }
 
 .op-bestseller-header {
@@ -375,8 +379,9 @@ body{
 .op-bestseller-cards {
     display: flex;
     flex-wrap: wrap; /* Ermöglicht das Umbrechen der Karten */
-    gap: 20px; /* Abstand zwischen den Karten */
+    gap: 0px; /* Abstand zwischen den Karten */
     justify-content: space-between;
+    
 }
 
 .op-bestseller-card {
@@ -384,12 +389,23 @@ body{
     display: flex;
     align-items: center;
     gap: 20px;
-    background-color: #fff;
+    /* background-color: #fff; */
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     position: relative;
+    background-color: #f3f3f3;
+    font-size: 14px;
+    color: #424040;
+}
+
+.op-bestseller-card:hover {
+    background-color: white;
+    /* transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1; 
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);  */
 }
 
 .op-bestseller-card img {
@@ -397,20 +413,37 @@ body{
     height: 80px;
     border-radius: 4px;
     object-fit: cover;
+    
 }
 
 .op-bestseller-content {
-    flex: 1;
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Abstand zwischen den Elementen */
+    width: 100%;;
+
+}
+
+.op-bestseller-content h3 {
+    display: flex;
+    align-items: center; /* Zentriert Badge und Text vertikal */
+    gap: 10px; /* Abstand zwischen Badge und Text */;
 }
 
 .op-badge-sec4 {
+    display: inline-block;
+    width: 120px;;
     background-color: #000;
     color: #fff;
     font-size: 12px;
-    padding: 2px 6px;
+    font-weight: bold;
+    padding: 2px 4px;
     border-radius: 4px;
-    display: inline-block;
-    margin-bottom: 5px;
+    margin: 0;
+    margin-right: 10px; /* Abstand zum Text */
+    vertical-align: middle; /* Vertikale Ausrichtung */
+    
 }
 
 .op-rating {
@@ -435,9 +468,15 @@ body{
 
 .op-price-sec4 {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    gap: 5px;
     margin-top: 10px;
+    justify-content: flex-end;
+}
+
+.op-price-sec4 .op-price-details-sec4 {
+    display: flex;
+    flex-direction: column; /* Stapelt old-price und new-price vertikal */
+    align-items: flex-start; /* Links ausrichten */
 }
 
 .op-discount-sec4 {
