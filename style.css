@@ -19,19 +19,9 @@ body {
 .body.bg-light {
   height: 100vw;
 }
-.headline-line {
-  background-color: rgb(218, 203, 203);
-  width: 103%;
-  padding: 1, 5px;
-  margin: 35px;
-  margin-left: auto;
-}
-.text-danger {
-  background-color: rgb(110, 29, 114);
-}
 
 .col {
-  padding-bottom: 100px;
+  padding-bottom: 80px;
   padding: 30px;
 }
 .card:hover {
@@ -71,39 +61,76 @@ body {
   padding-bottom: 7px !important;
   margin: 0 auto;
 }
+.mb-4{
+  font-size: 1.4rem;
+  font-weight: bold;
+}
 
 .col-md-4 {
   padding-bottom: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
+.row row-cols-1 row-cols-md-4 g-4 {
+  display: flex;
+  flex-direction: row;
+}
+
 .section-sandra .headline-line {
-  height: 4px;
+  height: 2px;
   background-color: #6c757d;
-  margin-bottom: 20px;
+  width: 100%;
+  margin-left: auto;
+  margin: 1px;
+}
+.headline-line{
+  height: 2px;
+  background-color: #6c757d;
+  width: 100%;
+  margin: 25px;
 }
 
 .section-sandra .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 350px;
-  height: 350px;
 }
 
 .section-sandra .card-title {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   margin-bottom: 50px;
+  margin-top: 3px;
+  color: #454749;
 }
 
 .section-sandra .card-text {
+  font-size: 1.1rem;
+  color: black;
+  margin-top: 10px;
+}
+.card-text strong {
+  color: black; /* Schwarzer Preis */
   font-size: 1.2rem;
 }
 
-.section-sandra .text-danger {
-  color: #dc3545;
+.custom-danger {
+  font-size: 1.2rem;
   font-weight: bold;
+  color: white;
+  background-color: rgb(110, 29, 114);
+  border-radius: 5px;
+
 }
-div.container.my-5 {
-  padding-bottom: 200px;
+.card-text button {
+  padding: 7px;
+ 
 }
+.container.my-5 {
+  padding-bottom: 20px;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
 p.card-text {
   color: white;
   font-size: 1.2rem;
@@ -115,23 +142,24 @@ p.card-text {
   font-size: 1.2rem;
   padding: 15px 30px;
   border-radius: 10px;
-  margin-right: 1100px;
-  
+  margin-right: 1120px;
 }
 
 .news-card {
-  position: relative;
-  overflow: hidden;
   color: white;
 }
-.news-card img {
-  height: 300px;
+.card-img-top {
+  height: 150px;
   object-fit: cover;
+}
+.carousel-control-prev {
+  left: -500px;
+  z-index: 1;
 }
 
 .news-card .card-img-overlay {
   padding: 10px;
-  
+
   display: flex;
 
   align-items: flex-end;
@@ -139,9 +167,7 @@ p.card-text {
 
 .explore-section {
   background: #1a1a1a;
-
   color: white;
-  padding: 40px 20px;
   text-align: start;
 }
 .explore-section h2 {
@@ -165,18 +191,16 @@ p.card-text {
 .explore-overlay {
   background: rgba(0, 0, 0, 0.6);
 
-  padding: 40px;
+   
 
   border-radius: 10px;
 
   text-align: center;
 }
 
-.carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: black;
 
-  border-radius: 50%;
+    border-radius: 50%;
 }
 .navbarsandra {
   background-color: rgb(43, 40, 40);
@@ -207,7 +231,7 @@ p.card-text {
 .buttonsandra {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 30px;
 }
 .buttonsandra:hover {
   background-color: rgb(44, 96, 209);
@@ -295,4 +319,9 @@ p.card-text {
   align-items: flex-start;
   margin-top: 30px;
   gap: 5px;
+}
+
+.card-img {
+  height: 280px;
+  width: 280px;
 }
