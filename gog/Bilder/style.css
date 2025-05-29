@@ -1,0 +1,547 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #D9D9D9;
+}
+
+/* Bereich für Isabelle */
+
+.before-nav {
+  position: relative;
+  height: 5px;
+  background-color: #4d2c91;
+}
+.before-nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: url('./before-nav.jpg')center/cover no-repeat;
+  opacity: 0.7;
+}
+
+.in-topbar {
+    background-color:rgb(25, 25, 25); /* Sehr dunkles Grau */
+    color: white; /* Weißer Text */
+    display: flex; /* Flexbox für horizontale Ausrichtung */
+    align-items: center; /* Zentriert Inhalte vertikal */
+    justify-content: space-between; /* Abstand zwischen linkem und rechtem Bereich */
+    padding: 0.5rem 2rem; /* Innenabstand oben/unten und links/rechts */
+    font-size: 15px; /* Schriftgröße */
+    height: 50px;
+  }
+
+  /* Linker und rechter Bereich der Navigationsleiste */
+  .in-topbar .in-left,
+  .in-topbar .in-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* Abstand zwischen den Elementen */
+    z-index: 10;
+    
+ }
+
+  /* GOG-Logo */
+  .in-topbar img {
+    height: 35px; /* Festgelegte Höhe */
+    border-radius: 4px; /* rundet die Ecken ab */
+  }
+
+  /* Pfeil-Symbol für Dropdown-Menüs */
+  .in-topbar .dropdown::after {
+    content: "▼"; /* Unicode-Pfeil */
+    font-size: 10px; /* Kleinere Schrift */
+    margin-left: 5px; /* Abstand zum Menütext */
+  }
+
+  /* Verlinkungen in der Topbar */
+  .in-topbar a {
+    color: white;
+    text-decoration: none; /* Kein Unterstrich */
+  }
+
+  /* Hervorgehobener Login-Link */
+  .in-topbar .in-highlight::after {
+    margin-left:5px;
+    content:"▼";
+    font-size: 10px;
+    vertical-align: middle;
+    color: white;
+}
+.in-topbar .in-highlight{
+    color: rgb(249, 178, 255); /* Lila Farbton */ 
+
+}
+
+  /* Bannerbereich */
+  .in-banner {
+    background-image: url('./HeaderBild.jpg'); /* Pfad zum Hintergrundbild */
+    background-size: cover; /* Bild deckt gesamten Container ab */
+    background-position: center; /* Zentrierung des Bildes */
+    width: 100vw; /* Volle Bildschirmbreite */
+    height: 38vh; /*  Bildschirmhöhe */
+    position: relative; /* Für absolute Positionierung des Buttons */
+    display: flex; /* Ermöglicht Flexbox-Ausrichtung */
+    flex-direction: column; /* Inhalte vertikal anordnen */
+    justify-content: flex-start; /* Oben beginnen */
+    padding: 2rem; /* Innenabstand */
+    color: white; /* Textfarbe */
+  }
+
+  /* Inhalt im Banner (z. B. Überschrift) */
+  .in-banner-content {
+    flex: 1; /* Nimmt den verfügbaren Platz ein */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Inhalt am oberen Rand ausrichten */
+  }
+
+  /* Überschrift im Banner */
+  .in-banner-content h2 {
+    font-size: 28px;
+    margin-left: 2rem;
+    margin-bottom: 1rem; /* Abstand unter der Überschrift */
+  }
+
+  /* Call-to-Action Button */
+  .in-button {
+    position: absolute; /* Absolute Positionierung innerhalb des .banner Containers */
+    bottom: 2rem; /* Abstand vom unteren Rand */
+    right: 2rem; /* Abstand vom rechten Rand */
+    padding: 1rem 2rem; /* Innenabstand */
+    background: linear-gradient(to bottom, #7a1fa2, #ab47bc); /* Lila Farbverlauf */
+    color: white; /* Textfarbe */
+    border: none; /* Kein Rahmen */
+    border-radius: 8px; /* Abgerundete Ecken */
+    font-size: 16px;
+    cursor: pointer; /* Zeigt Hand-Cursor beim Hover */
+  }  
+  .highlights-header {
+    color: #444;                       /* Dunkelgraue Schriftfarbe für gute Lesbarkeit */
+    padding: 20px;                    /* Innenabstand rundherum für etwas Luft */
+    font-size: 1.5rem;                /* Schriftgröße etwas größer als normal (~24px) */
+    margin-bottom: 0;                /* Kein Abstand nach unten – vermutlich weil danach direkt etwas folgt */
+    border-bottom: 1px solid #ddd;   /* Dünne, helle Trennlinie unter der Überschrift */
+    text-align: left;                /* Text linksbündig ausrichten */
+    max-width: 1200px;               /* Maximalbreite zur Begrenzung auf großen Bildschirmen */
+    margin-left: auto;              /* Zentriert durch automatische Außenabstände */
+    margin-right: auto;
+}
+  
+/* Äußere Hülle des Karussells */
+.carousel-container {
+  max-width: 100%;                    /* Volle Breite */
+  padding-top: 0;                     /* Kein oberer Abstand */
+            /* Weißer Hintergrund */
+  margin-top: 20px;                   /* Abstand nach oben */
+  border-radius: 0;                   /* Keine abgerundeten Ecken */
+  overflow: hidden;                   /* Inhalt über Rand hinaus ausblenden */
+
+}
+
+/* Umhüllung des Karussells mit mehreren Items nebeneinander */
+.multi-item-carousel {
+  width: 100%;
+  overflow: hidden;                   /* Inhalte außerhalb der Box ausblenden */
+  position: relative;
+  background: #f0f0f0;                /* Heller grauer Hintergrund */
+}
+
+/* Wrapper um alle Slides, verschiebt Slides mit Bootstrap */
+.carousel-inner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 500px;                      /* Höhe der Slideshow */
+  width: 180%;                        /* Breite >100% für Nebenslides sichtbar */
+  margin: 0 -40%;                     /* Negative Ränder zentrieren Slides */
+}
+
+/* Einzelner Slide (ein Game-Card-Bereich) */
+.carousel-item-outer {
+  width: 33.33%;                      /* Drei gleich große Spalten */
+  position: relative;
+  padding: 0 15px;                    /* Horizontaler Abstand zwischen den Karten */
+}
+
+/* Linker und rechter Slide etwas ausgegraut */
+.left-item, .right-item {
+  opacity: 0.4;                       /* Reduzierte Sichtbarkeit */
+}
+
+/* Pfeilnavigation (links/rechts) */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;                /* Runde Pfeile */
+  background: rgba(0,0,0,0.6);        /* Halbtransparent schwarz */
+  border: none;
+  color: white;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Linker Pfeil – Position anpassen */
+.prev-arrow {
+  left: 25%;                          /* Versatz von links (nicht ganz am Rand) */
+}
+
+/* Rechter Pfeil – Position anpassen */
+.next-arrow {
+  right: 25%;                         /* Versatz von rechts */
+}
+
+/* Karte für ein Spiel */
+.game-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;                 /* Abgerundete Ecken */
+  height: 450px;                      /* Höhe der Karte */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Weicher Schatten */
+  background-color: #fff;
+}
+
+/* Bild innerhalb der Spielkarte */
+.game-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;                  /* Bild wird zugeschnitten */
+}
+
+/* Textüberlagerung unten im Spiel-Card (wenn vorhanden) */
+.game-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background: rgba(0,0,0,0.7);        /* Dunkler Hintergrund mit Transparenz */
+  color: white;
+}
+
+/* Spieltitel */
+.game-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Preis-Anzeige */
+.price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Herz-Symbol oben rechts */
+.heart-icon {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Button-Design für Warenkorb */
+.btn-cart-action {
+  background-color: #84b92a;          /* Grüner Button */
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+.carousel-indicators-stripes button {
+  width: 40px;
+  height: 4px;
+  margin: 0 6px;
+  background-color: #383737;
+  border: none;
+  border-radius: 2px;
+  opacity: 0.5;
+  transition: opacity 0.3s, background-color 0.3s;
+}
+
+.carousel-indicators-stripes button.active {
+  background-color: #932891; /* Lila Farbe wie dein Aktionsbutton */
+  opacity: 1;
+}
+
+
+/* Karten */
+.in-Karten {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.in-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1300px;
+  width: 100%;
+}
+
+.in-card {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
+}
+.in-card:hover{
+  transform: scale(1.45);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.in-card img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.in-label {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background: black;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.in-title {
+  padding: 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #222;
+  min-height: 60px;
+}
+
+.in-price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 12px 12px;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.in-discount {
+  background-color: #7b3cbf;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.in-old {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.in-new {
+  font-weight: bold;
+  color: #111;
+}
+
+
+/* Info-Banner */
+.info-banner {
+  width: 100vw; /* Volle Breite des Viewports */
+ 
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 0; /* Entfernt abgerundete Ecken */
+  box-sizing: border-box; /* Bezieht Padding in die Breite ein */
+}
+
+.info-banner p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.info-banner .highlight {
+  color: #800080; /* Lila Farbe */
+  font-weight: bold;
+}
+
+.info-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem; /* Abstand zum oberen Text */
+}
+
+.info-link i {
+  color: #800080; /* Lila Farbe */
+  font-size: 1.2rem;
+}
+
+.info-link a {
+  text-decoration: none;
+  color: #800080;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.info-link a:hover {
+  text-decoration: underline;
+}
+
+/* Karten/ die zweiten */
+
+.in-box {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background: white;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.in-game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.in-letzte {
+  background: #fdfdfd;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.in-letzte .in-label {
+  background: black;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+}
+
+.in-letzte img {
+  width: 100%;
+  display: block;
+}
+
+.in-letzte .in-p {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.in-pr {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  justify-content: flex-end;
+  display: flex;
+}
+
+
+.in-dis {
+  background: #7b3cbf;
+  color: white;
+  padding: 4px 8px;
+  font-weight: bold;
+}
+
+.in-o {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.in-n {
+  font-weight: bold;
+}
+
+.in-bild {
+  margin-top: 40px;
+  position: relative;
+  text-align: center;
+}
+
+.in-bild img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.in-bild button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: #7b3cbf;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Bereich für Oliver */
+
+
+
+
+
+
+
+
+
+/* Bereich für Sandra */
+
+
+
+
+
+
+

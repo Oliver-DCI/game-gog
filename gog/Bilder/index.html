@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Willkommen bei GOG.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+<header> <!-- header Isabelle --> 
+        
+        
+<div class="before-nav"></div>
+
+<div class="in-topbar">
+<div class="in-left">
+            <img src="./images.jpeg" alt="GOG Logo">
+            <a href="#" class="dropdown">SPIELE</a>
+            <a href="#" class="dropdown">INFOS</a>
+            <a href="#" class="dropdown">FORUM</a>
+            <a href="#" class="dropdown">HILFE</a>
+            <a href="#" class="in-highlight">EINLOGGEN</a>
+</div>
+<div class="in-right">
+           <span>🛒 0</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-search">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              </span>
+</div>
+</div>
+      
+<div class="in-banner" style="background-image: url(./HeaderBild.jpg);">
+          <div class="in-banner-content">
+         <h2>Warhammer-Titel bis zu -90%</h2>
+         <button class="in-button">Zur Aktion</button>
+</div>
+</div> 
+</header>
+
+<!-- Highlights Carousel -->
+<div class="carousel-container">
+
+    <h3 class="highlights-header">Angebote</h3>
+    
+    <!-- Wrapper für relative Positionierung (z.B. für die Pfeile) -->
+    <div class="position-relative"> 
+    
+    <!-- Optionaler Wrapper zur Gruppierung -->
+    <div class="multi-item-carousel">
+    
+    <!-- Haupt-Carousel -->    
+    <div id="highlightsCarousel" class="carousel-inner-wrapper carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+    
+    <!-- Container für alle Slides -->
+    <div class="carousel-inner">
+    <!-- === Slide 1 === -->  
+    <!-- "active" markiert das erste sichtbare Slide -->
+    <div class="carousel-item active">
+    <!-- Flexbox für horizontale Anordnung der Spiele -->
+    <div class="d-flex">
+                    
+    <!-- Linkes Spiel  -->
+    <div class="carousel-item-outer left-item">
+    <div class="game-card position-relativ">
+    <img src="./ManSky.webp" alt="No Mans Sky" class="w-100 h-100 object-fit-cover">
+    <div class="heart-icon"><i class="far fa-heart"></i></div>
+    <div class="p-3 position-absolute bottom-0 w-100 bg-white">
+    <div class="price fw-bold fs-4">$59.99</div>
+    <button class="btn btn-success w-100 mt-2">Add to cart</button>
+    </div>
+    </div>
+    </div>
+                    
+    <!-- Zentrales Spiel -->
+    <div class="carousel-item-outer center-item">
+    <div class="game-card" style="background-color: #0d1e45;">
+    <img src="./RawFury.webp" alt="Fury" style="opacity: 0.6;">
+    <div class="d-flex flex-column position-absolute h-100 w-100 p-4">
+    <div class="text-center my-4">
+    <h2 class="text-warning fw-bold mb-0" style="font-size: 2.5rem;">Time Travelling</h2>
+    <span class="badge bg-dark text-warning px-3 py-2">PROMO</span>
+    </div>
+    <div class="mt-auto text-light mb-4">
+    <p class="mb-2">Quickly, get into our time machine!</p>
+    <h4 class="fw-bold mb-4">Discover the timeless magic of gaming up to -95%</h4>
+    <div class="text-end mt-4">
+    <button class="btn btn-purple px-4 py-2" style="background-color: #932891; color: white;">Browse</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+                    
+    <!-- Rechtes Spiel -->
+    <div class="carousel-item-outer right-item">
+    <div class="game-card">
+    <span class="badge bg-light text-dark position-absolute end-0 m-2">IN LIBRARY</span>
+    <img src="./GoodGame.webp" alt="Cyberpunk 2077">
+    <div class="p-4 position-absolute bottom-0 w-100 bg-dark bg-opacity-75 text-white">
+    <p class="mb-1">Now on sale</p>
+    <h4 class="fw-bold">Cyberpunk 2077<br>Ultimate Edition</h4>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+    <div class="d-flex">
+    <!-- Skyrim wieder links -->
+    <!-- Struktur wie zuvor -->
+    <!-- Cyberpunk in der Mitte -->
+    <!-- Struktur wie zuvor -->  
+        
+    
+    
+    
+    <!-- Linkes Spiel -->
+    <div class="carousel-item-outer left-item">
+    <div class="game-card" style="background-color: #0d1e45;">
+    <img src="./DawnDown.webp" alt="Skyrim" style="opacity: 0.6;">
+    <div class="d-flex flex-column position-absolute h-100 w-100 p-4">
+    <div class="text-center my-4">
+    <h2 class="text-warning fw-bold mb-0" style="font-size: 2.5rem;">Time Travelling</h2>
+    <span class="badge bg-dark text-warning px-3 py-2">PROMO</span>
+    </div>
+    <div class="mt-auto text-light mb-4">
+    <p class="mb-2">Quickly, get into our time machine!</p>
+    <h4 class="fw-bold mb-4">Discover the timeless magic of gaming up to -95%</h4>
+    <div class="text-end mt-4">
+    <button class="btn btn-purple px-4 py-2" style="background-color: #932891; color: white;">Browse</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <!-- Zentrales Spiel -->
+    <div class="carousel-item-outer center-item">
+    <div class="game-card">
+    <span class="badge bg-light text-dark position-absolute end-0 m-2">IN LIBRARY</span>
+    <img src="./KillBug.webp" alt="Cyberpunk 2077">
+    <div class="p-4 position-absolute bottom-0 w-100 bg-dark bg-opacity-75 text-white">
+    <p class="mb-1">Now on sale</p>
+    <h4 class="fw-bold">Cyberpunk 2077<br>Ultimate Edition</h4>
+    </div>
+    </div>
+    </div>
+                    
+    <!-- Rechtes Spiel-->
+    <div class="carousel-item-outer right-item">
+    <div class="game-card">
+    <img src="./Mafia.webp" alt="Doom">
+    <div class="heart-icon"><i class="far fa-heart"></i></div>
+    <div class="p-3 position-absolute bottom-0 w-100 bg-white">
+    <div class="price fw-bold fs-4">$19.99</div>
+    <button class="btn btn-success w-100 mt-2">Add to cart</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+                
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+    <div class="d-flex">
+                    
+    <!-- Linkes Spiel -->
+    <div class="carousel-item-outer left-item">
+    <div class="game-card">
+    <span class="badge bg-light text-dark position-absolute end-0 m-2">IN LIBRARY</span>
+    <img src="./Morrowind.webp" alt="Cyberpunk 2077">
+    <div class="p-4 position-absolute bottom-0 w-100 bg-dark bg-opacity-75 text-white">
+    <p class="mb-1">Now on sale</p>
+    <h4 class="fw-bold">Cyberpunk 2077<br>Ultimate Edition</h4>
+    </div>
+    </div>
+    </div>
+                    
+    <!-- Zentrales Spiel -->
+    <div class="carousel-item-outer center-item">
+    <div class="game-card">
+    <img src="./TimeTraveling.webp" alt="Doom">
+    <div class="heart-icon"><i class="far fa-heart"></i></div>
+    <div class="p-3 position-absolute bottom-0 w-100 bg-white">
+    <div class="price fw-bold fs-4">$19.99</div>
+    <button class="btn btn-success w-100 mt-2">Add to cart</button>
+    </div>
+    </div>
+    </div>
+                    
+    <!-- Rechtes Spiel -->
+    <div class="carousel-item-outer right-item">
+    <div class="game-card">
+    <img src="./ResidentEvil.webp" alt="Saints Row 3">
+    <div class="heart-icon"><i class="far fa-heart"></i></div>
+    <div class="p-3 position-absolute bottom-0 w-100 bg-white">
+    <div class="price fw-bold fs-4">$59.99</div>
+    <button class="btn btn-success w-100 mt-2">Add to cart</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div> <!-- Ende carousel-inner -->
+              
+    <!-- Navigationspfeile -->
+    <button class="carousel-arrow prev-arrow" type="button" data-bs-target="#highlightsCarousel" data-bs-slide="prev">
+    <i class="fas fa-chevron-left"></i>
+    <span class="visually-hidden">Previous</span>
+    </button>
+    
+    <button class="carousel-arrow next-arrow" type="button" data-bs-target="#highlightsCarousel" data-bs-slide="next">
+    <i class="fas fa-chevron-right"></i>
+    <span class="visually-hidden">Next</span>
+    </button>
+            
+    </div> <!-- Ende carousel-inner-wrapper -->
+    </div> <!-- Ende multi-item-carousel -->
+    </div> <!-- Ende position-relative -->
+    </div> <!-- Ende carousel-container -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+<!-- Indikatoren unterhalb des Carousels -->
+<div class="carousel-indicators-stripes d-flex justify-content-center mt-3">
+    <button type="button" data-bs-target="#highlightsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#highlightsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#highlightsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#highlightsCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#highlightsCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#highlightsCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    <button type="button" data-bs-target="#highlightsCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+    <button type="button" data-bs-target="#highlightsCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+    <button type="button" data-bs-target="#highlightsCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+    <button type="button" data-bs-target="#highlightsCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+    <button type="button" data-bs-target="#highlightsCarousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
+    <button type="button" data-bs-target="#highlightsCarousel" data-bs-slide-to="11" aria-label="Slide 12"></button>
+    <button type="button" data-bs-target="#highlightsCarousel" data-bs-slide-to="12" aria-label="Slide 13"></button>
+  </div>
+
+  
+
+<!-- Karten -->
+
+<div class="in-Karten">
+<div class="in-card-container">
+
+    <!-- Karte 1 -->
+<div class="in-card">
+<div class="in-label">GOOD OLD GAME</div>
+<img src="./Heroes3.webp" alt="Heroes III">
+<div class="in-title">Heroes of Might and Magic® 3: Complete</div>
+<div class="in-price">
+<div class="in-discount">-75%</div>
+<div class="in-old">9,19 €</div>
+<div class="in-new">2,29 €</div>
+</div>
+</div>
+
+    <!-- Karte 2 -->
+<div class="in-card">
+<img src="./Skyrim.webp" alt="Skyrim">
+<div class="in-title">The Elder Scrolls V: Skyrim Anniversary Edition</div>
+<div class="in-price">
+<div class="in-discount">-67%</div>
+<div class="in-old">49,99 €</div>
+<div class="in-new">16,54 €</div>
+</div>
+</div>
+
+    <!-- Karte 3 -->
+<div class="in-card">
+<img src="./Metro.webp" alt="Metro Bundle">
+<div class="in-title">Metro Franchise Bundle</div>
+<div class="in-price">
+<div class="in-discount">-84%</div>
+<div class="in-old">59,49 €</div>
+<div class="in-new">9,59 €</div>
+</div>
+</div>
+
+    <!-- Karte 4 -->
+<div class="in-card">
+<img src="./finder.webp" alt="Pathfinder">
+<div class="in-title">Pathfinder: Wrath of the Righteous - Enhanced Edition</div>
+<div class="in-price">
+<div class="in-discount">-60%</div>
+<div class="in-old">19,99 €</div>
+<div class="in-new">7,99 €</div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+<!-- Info-Banner -->
+<section id="info-banner-section">
+<div class="info-banner">
+<p>GOG ist der beste Platz für das Sammeln und Spielen deiner 
+<span class="highlight">Good Old Games</span> und modernen Hits. Mit unserem 
+<span class="highlight">Gamers-First-Ansatz</span> und dem Respekt für 
+<span class="highlight">Bedürfnis nach Besitz</span> stehen wir dafür ein, dass Spiele für die Ewigkeit erhalten bleiben.
+</p>
+<div class="info-link">
+<i class="fas fa-circle"></i>
+<a href="#">Erfahre mehr über GOG GALAXY</a>
+</div>
+</div>
+</section>
+
+
+
+<!-- Karten/ die zweiten -->
+
+
+<div class="in-box">
+<h2>Neu in das GOG Preservation Program aufgenommen</h2>
+<div class="in-game-grid">
+    
+  
+  
+ <!-- Karte 1 -->   
+<div class="in-letzte">
+<div class="in-label">GOOD OLD GAME</div>
+<img src="./Epic.webp" alt="Final Liberation">
+<div class="in-p">Final Liberation: Warhammer Epic 40,000</div>
+<div class="in-pr">
+<span class="in-dis">-75%</span>
+<span class="in-o">5,49 €</span>
+<span class="in-n">1,39 €</span>
+</div>
+</div>
+
+    <!-- Karte 2-->
+<div class="card">
+<div class="label">GOOD OLD GAME</div>
+<img src="./Warhammer.webp" alt="Chaos Gate">
+<div class="title">Warhammer 40,000: Chaos Gate</div>
+<div class="price">
+<span class="discount">-75%</span>
+<span class="old">9,19 €</span>
+<span class="new">2,29 €</span>
+</div>
+</div>
+
+    <!-- Karte 3 -->
+<div class="card">
+<div class="label">GOOD OLD GAME</div>
+<img src="./FireWarrior.webp" alt="Fire Warrior">
+<div class="title">Warhammer 40,000: Fire Warrior</div>
+<div class="price">
+<span class="new">5,49 €</span>
+</div>
+</div>
+
+    <!-- Karte 4 -->
+<div class="card">
+<div class="label">GOOD OLD GAME</div>
+<img src="./Warhammer40000.webp" alt="Rites of War">
+<div class="title">Warhammer 40,000: Rites of War</div>
+<div class="price">
+<span class="discount">-75%</span>
+<span class="old">5,49 €</span>
+<span class="new">1,39 €</span>
+</div>
+</div>
+</div>
+
+
+<div class="in-bild">
+<img src="./GoodOldGame.webp" alt="Banner">
+<button>Mehr erfahren</button>
+</div>
+</div>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+   
