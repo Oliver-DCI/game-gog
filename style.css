@@ -12,7 +12,7 @@
   box-sizing: border-box;
 }
 
-body {
+main {
   background-color: #d9d9d9;
 }
 
@@ -26,9 +26,11 @@ body {
 }
 .card:hover {
   transition: transform 0.5s ease-in-out;
-  transform: scale(2.2);
+  transform: scale(1.9);
   z-index: 1;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+
 }
 .strich-container {
   display: flex; /* Legt die Striche nebeneinander */
@@ -93,17 +95,30 @@ body {
 
 .section-sandra .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+width: 300px;
+height: auto;
+margin: 8px;
+border: none;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.section-sandra .card-body{
+  background-color: rgb(234, 232, 232);
 }
 
 .section-sandra .card-title {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
-  margin-bottom: 50px;
-  margin-top: 3px;
+  margin-bottom: 32px;
   color: #454749;
 }
 
 .section-sandra .card-text {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: relative;
+  gap: 10px;
   font-size: 1.1rem;
   color: black;
   margin-top: 10px;
@@ -111,7 +126,14 @@ body {
 .card-text strong {
   color: black; /* Schwarzer Preis */
   font-size: 1.2rem;
-}
+  
+   
+    font-weight: bold;
+    
+    margin-top: 20px; /* Abstand unterhalb des durchgestrichenen Preises */
+    align-self: flex-end; /* Positioniert den aktuellen Preis unten rechts */
+  }
+
 
 .custom-danger {
   font-size: 1.2rem;
@@ -119,8 +141,16 @@ body {
   color: white;
   background-color: rgb(110, 29, 114);
   border-radius: 5px;
+  padding: 5px 10px;
+  align-self: flex-start;}
 
+.card-text del {
+  font-size: 0.9rem;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
+
 .card-text button {
   padding: 7px;
  
@@ -150,6 +180,7 @@ p.card-text {
 }
 .card-img-top {
   height: 150px;
+  width: 100%;
   object-fit: cover;
 }
 .carousel-control-prev {
