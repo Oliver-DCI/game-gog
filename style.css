@@ -14,6 +14,10 @@
 
 main {
   background-color: #d9d9d9;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 
 .body.bg-light {
@@ -39,6 +43,7 @@ main {
   flex-direction: row;
   justify-content: center;
   height: 10px; /* Optional: Genug Platz, damit die Striche sichtbar sind */
+
 }
 
 .strich {
@@ -66,18 +71,30 @@ main {
 .mb-4{
   font-size: 1.4rem;
   font-weight: bold;
+ margin-bottom: 1px;
 }
 
-.col-md-4 {
+.col-m-4 {
   padding-bottom: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
+  font-size: 1.4rem;
+  
+
+  
+  max-width: 300px;
+  
 }
 
-.row row-cols-1 row-cols-md-4 g-4 {
-  display: flex;
-  flex-direction: row;
+
+.col-4 {
+ width: 100%;
 }
+
+.row  {
+display: flex;
+ flex-direction: row;
+ 
+  }
+  
 
 .section-sandra .headline-line {
   height: 2px;
@@ -87,17 +104,17 @@ main {
   margin: 1px;
 }
 .headline-line{
-  height: 2px;
+  height: 1mm;
   background-color: #6c757d;
   width: 100%;
-  margin: 25px;
+  margin: 25px auto; /* Centers the headline-line horizontally */
 }
 
 .section-sandra .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 width: 300px;
 height: auto;
-margin: 8px;
+
 border: none;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -156,12 +173,13 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
  
 }
 .container.my-5 {
-  padding-bottom: 20px;
-  padding-left: 90px;
-  padding-right: 90px;
+  padding-left: 5px;
+
+ 
+  
 }
 
-p.card-text {
+.card-text {
   color: white;
   font-size: 1.2rem;
 }
@@ -175,8 +193,16 @@ p.card-text {
   margin-right: 1120px;
 }
 
-.news-card {
-  color: white;
+.card  {
+  
+  width: 300px; /* Einheitliche Breite für alle Karten */
+  height: auto;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+
+
+
 }
 .card-img-top {
   height: 150px;
@@ -205,19 +231,33 @@ p.card-text {
   font-size: 3rem;
   margin-bottom: 20px;
   padding-right: 810px;
-  padding-top: 80px;
+  padding-top: 160px;
 }
 .explore-section p {
   font-size: 1.2rem;
   margin-bottom: 20px;
   padding-right: 645px;
 }
-.explore-section .card-img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 20px;
-  border-radius: 10px;
+.card-img {
+  height: 300px;
+  object-fit: cover;
+
+
+
+
+
+
 }
+
+.card-img-celebrate {
+    width: 600px;/* Doppelte Breite für das Bild "celebrate" */
+  height: 300px;
+  
+ 
+  }
+  
+  
+
 
 .explore-overlay {
   background: rgba(0, 0, 0, 0.6);
@@ -352,7 +392,59 @@ p.card-text {
   gap: 5px;
 }
 
-.card-img {
-  height: 280px;
-  width: 280px;
+
+
+
+
+.card-container {
+   display: flex;
+    white-space: nowrap; /* Verhindert Zeilenumbruch */
+  gap: 20px; /* Abstand zwischen den Karten */
+  padding: 10px; /* Innenabstand für den Container */
+}
+
+
+
+.news-container {
+  display: flex; /* Aktiviert Flexbox */
+  flex-direction: row; /* Ordnet die Bilder horizontal an */
+  justify-content: flex-start; /* Bilder beginnen links */
+  align-items: flex-start; /* Bilder werden oben ausgerichtet */
+  gap: 27px; /* Abstand zwischen den Bildern */
+  margin-top: 60px; /* Abstand zur Linie */
+  margin-left: 0;
+  padding-left: 0;
+  margin-right: 0;
+  padding-right: 0;
+  overflow: visible;
+ margin-top: 5px;
+margin-bottom: -20px;
+ }
+
+.news-item {
+  position: relative;
+  flex: 0 0 auto; /* Verhindert, dass die Bilder ihre Größe ändern */
+
+}
+.news-img {
+  width: 100%; /* Bild passt sich der Breite des Containers an */
+  max-width: 300px; /* Maximale Breite für die Bilder */
+  height: 300px; /* Einheitliche Höhe für alle Bilder */
+  object-fit: cover; /* Schneidet die Bilder passend zu */
+}
+
+.celebrate-img {
+  max-width: 1200px; /* Doppelte Breite für das Celebrate-Bild */
+max-width: none;
+object-fit: cover;
+height: 300px;
+}
+.news-text {
+  position: absolute; /* Positioniert den Text über dem Bild */
+  bottom: 10px; /* Abstand vom unteren Rand des Bildes */
+  left: 10px; /* Abstand vom linken Rand des Bildes */
+  color: white; /* Weißer Text */
+  font-size: 1.5rem; /* Schriftgröße des Textes */
+  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Leichter Schatten für bessere Lesbarkeit */
 }
