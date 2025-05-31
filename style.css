@@ -174,6 +174,15 @@ body{
     
 }
 
+.op-line-sec2 {
+    width: 1080px;
+    height: 1px;
+    background-color: #9b909b;
+    margin: 10px 10px;
+
+}
+
+
 .op-promo-link {
     text-decoration: none;
     color: #666;
@@ -362,7 +371,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .op-bestseller-header h2 {
@@ -374,6 +383,14 @@ body{
     font-size: 14px;
     color: #800080;
     text-decoration: none;
+}
+
+.op-line-sec4 {
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .op-bestseller-cards {
@@ -396,7 +413,7 @@ body{
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     position: relative;
     background-color: #f3f3f3;
-    font-size: 14px;
+    font-size: 12px;
     color: #424040;
 }
 
@@ -416,7 +433,7 @@ body{
 
 .op-bestseller-card img {
     width: 80px;
-    height: 80px;
+    height: 100px;
     border-radius: 4px;
     object-fit: cover;
     
@@ -434,7 +451,9 @@ body{
 .op-bestseller-content h3 {
     display: flex;
     align-items: center; /* Zentriert Badge und Text vertikal */
+    text-align: left;
     gap: 10px; /* Abstand zwischen Badge und Text */;
+    width: 400px;
 }
 
 .op-badge-sec4 {
@@ -505,13 +524,14 @@ body{
     color: #333;
 }
 
-.wishlist-button {
+.op-wishlist-button {
+    margin-left: auto;
     position: absolute;
     bottom: 10px;
     right: 10px;
     background: none;
     border: none;
-    font-size: 20px;
+    font-size: 40px;
     cursor: pointer;
     color: #666;
 }
@@ -587,6 +607,7 @@ body{
     height: 100%;
     margin-left: auto; /* Schiebt das Bild nach rechts */
     display: block; /* Stellt sicher, dass das Bild als Blockelement angezeigt wird */
+    z-index: 1;
 
     
 }
@@ -605,14 +626,15 @@ body{
     font-size: 80px;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.1);
-    z-index: 0;
+    z-index: 2;
+    height: 100%;
 }
 
 .op-pagination-sec5 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 30px;
     gap: 10px;
 }
 
@@ -627,8 +649,11 @@ body{
 .op-most-wanted-card:hover {
     transform: scale(1.50);
     transition: transform 0.3s ease-in-out;
-    z-index: 1;
+    /* z-index: 2; */
 }
+
+/* CSS für Karusell */
+
 
 
 
