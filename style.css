@@ -17,7 +17,6 @@ main {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 .body.bg-light {
@@ -33,8 +32,6 @@ main {
   transform: scale(1.9);
   z-index: 1;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-
-
 }
 .strich-container {
   display: flex; /* Legt die Striche nebeneinander */
@@ -42,84 +39,96 @@ main {
   align-items: center; /* Richtet die Striche am unteren Rand aus */
   flex-direction: row;
   justify-content: center;
-  height: 10px; /* Optional: Genug Platz, damit die Striche sichtbar sind */
+  height: 0px; /* Optional: Genug Platz, damit die Striche sichtbar sind */
+  padding-right: 53px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
 
+.strich-container-eins {
+  display: flex; /* Legt die Striche nebeneinander */
+  gap: 5mm; /* Abstand von 1 Millimeter zwischen den Strichen */
+  align-items: center; /* Richtet die Striche am unteren Rand aus */
+  flex-direction: row;
+  justify-content: center;
+  height: 1px; /* Optional: Genug Platz, damit die Striche sichtbar sind */
+}
+
+.strich-container-zwei {
+  display: flex; /* Legt die Striche nebeneinander */
+  gap: 5mm; /* Abstand von 1 Millimeter zwischen den Strichen */
+  align-items: center; /* Richtet die Striche am unteren Rand aus */
+  flex-direction: row;
+  justify-content: center;
+  height: 10px; /* Optional: Genug Platz, damit die Striche sichtbar sind */
+  margin-top: -50px;
 }
 
 .strich {
   width: 1cm; /* Breite jedes Striches: 1 Zentimeter */
-  height: 1mm; /* Dicke der Linie */
-  border-bottom: 4px solid; /* Gestrichelter unterer Rand */
+  border-bottom: 1px solid; /* Gestrichelter unterer Rand */
 }
 
 .strich.gray {
   border-color: gray;
+  height: 0.5mm;
 }
 
 .strich.purple {
   border-color: purple;
-}
-
-.strich-container .strich:nth-child(1) {
-  border-width: 1mm;
+  border-bottom: 4px solid;
 }
 
 .container.py-5 {
-  padding-bottom: 7px !important;
   margin: 0 auto;
 }
-.mb-4{
+
+.mb-4 {
   font-size: 1.4rem;
   font-weight: bold;
- margin-bottom: 1px;
+  margin-bottom: 1px;
 }
 
 .col-m-4 {
   padding-bottom: 30px;
   font-size: 1.4rem;
-  
-
-  
   max-width: 300px;
-  
 }
-
 
 .col-4 {
- width: 100%;
+  width: 100%;
 }
 
-.row  {
-display: flex;
- flex-direction: row;
- 
-  }
-  
+.row {
+  display: flex;
+  flex-direction: row;
+}
 
 .section-sandra .headline-line {
-  height: 2px;
+  height: 1px;
   background-color: #6c757d;
-  width: 100%;
+  width: 99%;
   margin-left: auto;
   margin: 1px;
 }
-.headline-line{
-  height: 1mm;
+.headline-line {
+  height: 1px;
   background-color: #6c757d;
-  width: 100%;
-  margin: 25px auto; /* Centers the headline-line horizontally */
+  width: 97%;
+  margin: 30px;
+  margin-left: 3px;
 }
 
 .section-sandra .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-width: 300px;
-height: auto;
+  width: 300px;
+  height: auto;
 
-border: none;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.section-sandra .card-body{
+.section-sandra .card-body {
   background-color: rgb(234, 232, 232);
 }
 
@@ -143,14 +152,12 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 .card-text strong {
   color: black; /* Schwarzer Preis */
   font-size: 1.2rem;
-  
-   
-    font-weight: bold;
-    
-    margin-top: 20px; /* Abstand unterhalb des durchgestrichenen Preises */
-    align-self: flex-end; /* Positioniert den aktuellen Preis unten rechts */
-  }
 
+  font-weight: bold;
+
+  margin-top: 20px; /* Abstand unterhalb des durchgestrichenen Preises */
+  align-self: flex-end; /* Positioniert den aktuellen Preis unten rechts */
+}
 
 .custom-danger {
   font-size: 1.2rem;
@@ -159,7 +166,8 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   background-color: rgb(110, 29, 114);
   border-radius: 5px;
   padding: 5px 10px;
-  align-self: flex-start;}
+  align-self: flex-start;
+}
 
 .card-text del {
   font-size: 0.9rem;
@@ -170,13 +178,9 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 
 .card-text button {
   padding: 7px;
- 
 }
 .container.my-5 {
   padding-left: 5px;
-
- 
-  
 }
 
 .card-text {
@@ -191,18 +195,19 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   padding: 15px 30px;
   border-radius: 10px;
   margin-right: 1120px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
 }
 
-.card  {
-  
+buttonsn:hover {
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+.card {
   width: 300px; /* Einheitliche Breite für alle Karten */
   height: auto;
   border: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-
-
-
-
 }
 .card-img-top {
   height: 150px;
@@ -229,40 +234,28 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .explore-section h2 {
   font-size: 3rem;
-  margin-bottom: 20px;
-  padding-right: 810px;
+  padding-left: 370px;
   padding-top: 160px;
+  position: absolute;
 }
 .explore-section p {
   font-size: 1.2rem;
-  margin-bottom: 20px;
-  padding-right: 645px;
+  padding-top: 250px;
+  padding-left: 370px;
+  position: absolute;
 }
 .card-img {
-  height: 300px;
+  height: 450px;
   object-fit: cover;
-
-
-
-
-
-
 }
 
 .card-img-celebrate {
-    width: 600px;/* Doppelte Breite für das Bild "celebrate" */
+  width: 600px; /* Doppelte Breite für das Bild "celebrate" */
   height: 300px;
-  
- 
-  }
-  
-  
-
+}
 
 .explore-overlay {
   background: rgba(0, 0, 0, 0.6);
-
-   
 
   border-radius: 10px;
 
@@ -270,8 +263,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .carousel-control-next-icon {
-
-    border-radius: 50%;
+  border-radius: 50%;
 }
 .navbarsandra {
   background-color: rgb(43, 40, 40);
@@ -392,18 +384,12 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   gap: 5px;
 }
 
-
-
-
-
 .card-container {
-   display: flex;
-    white-space: nowrap; /* Verhindert Zeilenumbruch */
+  display: flex;
+  white-space: nowrap; /* Verhindert Zeilenumbruch */
   gap: 20px; /* Abstand zwischen den Karten */
   padding: 10px; /* Innenabstand für den Container */
 }
-
-
 
 .news-container {
   display: flex; /* Aktiviert Flexbox */
@@ -417,14 +403,13 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   margin-right: 0;
   padding-right: 0;
   overflow: visible;
- margin-top: 5px;
-margin-bottom: -20px;
- }
+  margin-top: 5px;
+  margin-bottom: -40px;
+}
 
 .news-item {
   position: relative;
   flex: 0 0 auto; /* Verhindert, dass die Bilder ihre Größe ändern */
-
 }
 .news-img {
   width: 100%; /* Bild passt sich der Breite des Containers an */
@@ -435,9 +420,9 @@ margin-bottom: -20px;
 
 .celebrate-img {
   max-width: 1200px; /* Doppelte Breite für das Celebrate-Bild */
-max-width: none;
-object-fit: cover;
-height: 300px;
+  max-width: none;
+  object-fit: cover;
+  height: 300px;
 }
 .news-text {
   position: absolute; /* Positioniert den Text über dem Bild */
@@ -445,6 +430,6 @@ height: 300px;
   left: 10px; /* Abstand vom linken Rand des Bildes */
   color: white; /* Weißer Text */
   font-size: 1.5rem; /* Schriftgröße des Textes */
-  
+
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Leichter Schatten für bessere Lesbarkeit */
 }
