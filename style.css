@@ -150,11 +150,9 @@ main {
   margin-top: 10px;
 }
 .card-text strong {
-  color: black; /* Schwarzer Preis */
+  color: black; 
   font-size: 1.2rem;
-
   font-weight: bold;
-
   margin-top: 20px; /* Abstand unterhalb des durchgestrichenen Preises */
   align-self: flex-end; /* Positioniert den aktuellen Preis unten rechts */
 }
@@ -194,7 +192,7 @@ main {
   font-size: 1.2rem;
   padding: 15px 30px;
   border-radius: 10px;
-  margin-right: 1120px;
+  margin-right: 1140px;
   cursor: pointer;
   transition: box-shadow 0.3s ease;
 }
@@ -204,7 +202,7 @@ buttonsn:hover {
 }
 
 .card {
-  width: 300px; /* Einheitliche Breite für alle Karten */
+  width: 300px; 
   height: auto;
   border: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -221,9 +219,7 @@ buttonsn:hover {
 
 .news-card .card-img-overlay {
   padding: 10px;
-
   display: flex;
-
   align-items: flex-end;
 }
 
@@ -234,19 +230,20 @@ buttonsn:hover {
 }
 .explore-section h2 {
   font-size: 3rem;
-  padding-left: 370px;
+  padding-left: 265px;
   padding-top: 160px;
   position: absolute;
 }
 .explore-section p {
   font-size: 1.2rem;
   padding-top: 250px;
-  padding-left: 370px;
+  padding-left: 265px;
   position: absolute;
 }
 .card-img {
   height: 450px;
   object-fit: cover;
+  width: 100%;
 }
 
 .card-img-celebrate {
@@ -256,19 +253,33 @@ buttonsn:hover {
 
 .explore-overlay {
   background: rgba(0, 0, 0, 0.6);
-
   border-radius: 10px;
-
   text-align: center;
 }
 
 .carousel-control-next-icon {
   border-radius: 50%;
+  background-color: #34393d;
+  position: absolute;
+  top: 29%;
+  margin-right: 200px;
 }
-.navbarsandra {
-  background-color: rgb(43, 40, 40);
-  padding: 10px;
+
+.carousel-control-prev-icon {
+  border-radius: 50%;
+  background-color: #343749;
+  position: absolute;
+  top: 29%;
+  margin-left: 198px;
 }
+.carousel-control-next-icon:hover {
+  background-color: hsl(297, 26%, 45%);
+}
+
+.carousel-control-prev-icon:hover {
+  background-color: hsl(297, 26%, 45%);
+}
+
 .navbarsandra li a:hover {
   text-shadow: 0 0 8px white;
 }
@@ -277,9 +288,14 @@ buttonsn:hover {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 25px;
+  align-items: center;
+  gap: 20px;
   margin: 20px 0;
-  padding-right: 550px;
+  padding-right: 580px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 0px;
+  background-color: rgb(43, 40, 40);
 }
 .navbarsandra li a {
   color: white;
@@ -293,8 +309,8 @@ buttonsn:hover {
 }
 .buttonsandra {
   display: flex;
-  flex-direction: row;
   gap: 30px;
+  border: none;
 }
 .buttonsandra:hover {
   background-color: rgb(44, 96, 209);
@@ -308,18 +324,18 @@ buttonsn:hover {
 .navbarsandra2 ul {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 15px;
   margin: 20px 0;
   flex-wrap: wrap;
   justify-content: center;
-  padding-right: 150px;
+  padding-right: 345px;
 }
 
 .navbarsandra2 li a {
   color: rgb(168, 163, 163);
   text-decoration: none;
   padding: 8px;
-  font-weight: 0.9rem;
+  font-size: small;
   font-weight: bold;
 }
 .navbarsandra2 li a:hover {
@@ -339,23 +355,23 @@ buttonsn:hover {
 .buttonpurple:hover {
   box-shadow: 0 0 10px 3px hsl(298, 100%, 82%);
 }
-.parent-container {
+.parent {
   background-color: rgb(43, 40, 40);
+  display: flex;
+  flex-direction: row;
 }
 .navbarsandra3 li {
-  max-width: 200px;
-  text-align: center;
-}
+  text-align: start;
+  margin-right: 20px;
+  }
+
 .navbarsandra3 ul li a {
   color: rgb(168, 163, 163);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: small;
   font-weight: bold;
-}
+ }
 
-.navbarsandra3 ul {
-  list-style: none;
-}
 .navbarsandra3 {
   display: flex;
   flex-direction: row;
@@ -363,23 +379,29 @@ buttonsn:hover {
   text-align: center;
   flex-wrap: wrap;
   gap: 20px;
-}
-
+  width: 800px;
+  }
+ 
 .navbarsandra3 ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   margin: 0;
-  padding: 0;
-}
-.navbarsandra3 li a:hover {
+  padding: 15px;
+  list-style: none;
+  line-height: 10px;
+  padding-left: 255px;
+  background-color: rgb(43, 40, 40);
+  
+ }
+
+ .navbarsandra3 li a:hover {
   color: white;
 }
 .navbarsandrazweieinhalb {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
   margin-top: 30px;
   gap: 5px;
 }
@@ -413,7 +435,7 @@ buttonsn:hover {
 }
 .news-img {
   width: 100%; /* Bild passt sich der Breite des Containers an */
-  max-width: 300px; /* Maximale Breite für die Bilder */
+  max-width: 300px; 
   height: 300px; /* Einheitliche Höhe für alle Bilder */
   object-fit: cover; /* Schneidet die Bilder passend zu */
 }
@@ -428,8 +450,33 @@ buttonsn:hover {
   position: absolute; /* Positioniert den Text über dem Bild */
   bottom: 10px; /* Abstand vom unteren Rand des Bildes */
   left: 10px; /* Abstand vom linken Rand des Bildes */
-  color: white; /* Weißer Text */
-  font-size: 1.5rem; /* Schriftgröße des Textes */
-
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Leichter Schatten für bessere Lesbarkeit */
+  color: white; 
+  font-size: 1.5rem; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+.text-links {
+  text-align: left;
+}
+.gog {
+  background-color: white;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 24px;
+  line-height: 21px;
+  margin: 8px 8px 8px 8px;
+  padding: 6px 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-left: 100px;
+}
+.gog-com {
+  color: white;
+  font-size: 13px;
+  display: block;
+  margin: 0;
+}
+.vogel a {
+  color: white;
+  padding-left: 1500px;
 }
