@@ -167,7 +167,7 @@ body{
     justify-content:flex-start;
     align-items: center;
     gap: 20px;
-    border-bottom: 2px solid #ddd;
+    /* border-bottom: 2px solid #ddd; */
     padding-bottom: 10px;
     margin-bottom: 20px;
     margin-top: 40px;
@@ -481,14 +481,16 @@ body{
 
 .op-stars {
     color: #ffcc00;
+    font-size: 26px;
 }
 
 .op-score {
     background-color: #ffcc00;
     color: #000;
-    font-size: 12px;
+    font-size: 16px;
     padding: 2px 4px;
     border-radius: 4px;
+
 }
 
 .op-price-sec4 {
@@ -496,7 +498,9 @@ body{
     gap: 5px;
     margin-top: 10px;
     justify-content: flex-end;
+    
 }
+
 
 .op-price-sec4 .op-price-details-sec4 {
     display: flex;
@@ -510,6 +514,7 @@ body{
     padding: 5px 10px;
     border-radius: 4px;
     font-size: 14px;
+    margin-top: 10px; 
 }
 
 .op-old-price-sec4 {
@@ -652,7 +657,7 @@ body{
     /* z-index: 2; */
 }
 
-/* CSS für Karusell */
+
 
 
 
