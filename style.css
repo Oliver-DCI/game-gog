@@ -322,6 +322,7 @@ body{
 
 .op-dreamlist-container {
     position: relative; /* Ermöglicht die absolute Positionierung von Kind-Elementen */
+    
 }
 
 .op-dreamlist-container img {
@@ -331,10 +332,11 @@ body{
     margin: 0 auto; /* Zentriert das Bild horizontal */
     margin-top: 40px;
     border-radius: 4px;
+    
 }
 
 .op-dreamlist-button {
-    position: absolute; /* Absolut positioniert relativ zum Container */
+    position: absolute; 
     right: 380px; /* Abstand vom rechten Rand */
     top: 82%; /* Vertikale Zentrierung */
     transform: translateY(-50%); /* Korrigiert die vertikale Zentrierung */
